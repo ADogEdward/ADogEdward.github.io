@@ -152,8 +152,6 @@
 
 
 
-
-
         .a-unity {
 
             transition: 0.3s;
@@ -164,8 +162,14 @@
             color: #c4feff;
         }
 
+        a:link {
+  color: rgb(110, 213, 250);
+  background-color: transparent;
+  text-decoration: none;
+}
+
         a:visited {
-            color: #528fb5;
+            color: #ffcffa;
             background-color: transparent;
             text-decoration: none;
             transition: 1.3s;
@@ -181,6 +185,7 @@
             margin-left: 100px;
             margin-right: 100px;
             margin-bottom: 40px;
+            text-align: left;
         }
 
         footer {
@@ -195,24 +200,23 @@
     </style>
 
 
-    <title>Aidan Edward - Portfolio</title>
+    <title>Aidan Edward -  Portfolio</title>
 
 </head>
 
 <body>
-
     <nav class = "navbar">
         <ul class = "navbar-list">
             <li class = "navbar-item">
-                <a> <i class="fa-solid fa-file-code"></i><span class = "link-text"> Projects </span></a>
+                <a href="projects.html"> <i class="fa-solid fa-file-code"></i><span class = "link-text" > Projects </span></a>
             </li>
 
             <li class = "navbar-item">
-                <a> <i class="fa-solid fa-code"></i><span class = "link-text"> Coding Skill</span></a>
+                <a href="coding-skill.html"> <i class="fa-solid fa-code"></i><span class = "link-text"> Coding Skill</span></a>
             </li>
 
             <li class = "navbar-item">
-                <a> <i class="fa-solid fa-address-book"></i><span class = "link-text"> Contact Details</span></a>
+                <a href="index.html"> <i class="fa-solid fa-address-book"></i><span class = "link-text"> Contact Details</span></a>
             </li>
 
             
@@ -227,76 +231,59 @@
         <h1 class="jersey-25-regular">Aidan Eitaire Alexander Edward</h1>
         <p>Game Developer/Programmer & Designer</p>
     </header>
-
     <section id="projects">
         <div class="project">
-            <h2 class>Code-Based User Interface Tweening <a class="a-unity" target="_blank" href="https://unity.com/"><i
-                        class="fa-brands fa-unity"   rel="noopener noreferrer"></i></a></h2>
+           <h2> Personal Background</h2>
+           <p>
+            Just recently graduated last year with a Bachelor's Degree, majoring in Computer Science and minoring in Computer Graphics at Victoria University. 
+            Grew up in the small town of Petone in a small family with just one sporty brother while I attached myself to the computer at an early age, 
+            and from then on became obsessed with all things computer-related which eventually led to my desire to make the video games I enjoyed which led me 
+            to studying programming and design as my interest in the decisions and philosophy of creators led to better experiences.  I’m usually quiet but can 
+            open up easily in front of others, attentive and honest with a weird sense of humor.
 
-                        <img style="height: 200px;" src = "images/Stealth Slaughter.gif"> 
+           </p>
+
+           <h2> Education </h2>
+           <p>
+             <b>Victoria University of Wellington</b> <br>
+             Bachelor of Science <br>
+             Major in Computer Science, Minor in Computer Graphics <br>
+             <b>Courses Include:</b> 
+             <ul>
+                <li>Real-time 3D Computer Graphics </li>
+                <li>Fund. of Artificial Intelligence </li>
+                <li>Game Design I </li>
+                <li>Game Design II </li>
+                <li>Computer Graphics </li>
+                <li>ML Tools and Techniques </li>
+                <li>Algorithms and Data Structures </li>
+               </ul>
+
+             <br>
+             <b>Hutt Valley High School</b> <br>
+             <ul>
+              <li>  <a> <b> NCEA LEVEL III</b>: English </a></li>
+              <li>  <a> <b> NCEA LEVEL III</b>: Calculus </a></li>
+              <li>  <a> <b> NCEA LEVEL III</b>: Physics </a></li>
+              <li>  <a> <b> NCEA LEVEL III</b>: Computer Science </a></li>
+              <li>  <a> <b> NCEA LEVEL III</b>: Digital Technology </a></li>
 
 
-            <p class="bitter-100">This was created to explore the possibility of moving user interface animations out of
-                the animation tab and into code instead; with the claim that using the Animator for User
-                Interface's are costly in terms of performance due to the fact that they apparently update
-                <b>every frame.</b> Currently only tweens between positions but this could easily be
-                extrapolated to work with any kind of values.
-                <br> <br>
+             </ul>
 
-                This was done using what's called <a class target="_blank"
-                    href="https://www.uml.edu/docs/Second-Theory_tcm18-190098.pdf"  ><b>Second Order Systems</b></a>
-                I found it when someone used it to control the damping, response and frequency to Procedural Animations.
-                But I adapted the method into being used for User Interface animations, I also added extra components
-                into the script
-                which allowed for animations to be triggered from buttons, for animations to trigger other animations
-                upon finishing.
-
-                This meant that animations could be tied together, one could finish and then cause another animation to
-                play.
-            </p>
-        </div>
-
-        <div class="project">
-            <h2>3D Platforming Project <a class="a-unity" target="_blank" rel="noopener noreferrer" href="https://unity.com/"><i
-                        class="fa-brands fa-unity"  ></i></a></h2>
-            <p class="bitter-100">This was created to experiment and try to emulate the mechanics and small
-                concepts of a 3D Platformer that usually go underlooked when playing such as how a character
-                might stick to the ground when running up and around slopes, player input relative to the camera,
-                dynamic jump height
-                based on how long the button is held down. My aim was to create an incredibly flexible and tight 3D
-                Platformer script.
+           </p>
 
 
-            </p>
-        </div>
-
-        <div class="project">
-            <h2>Flexible Fizzbuzz  <b>(C++)</b></h2>
-
-            <img src = "images/FizzBuzz.png"> 
-
-            <p class="bitter-100"> This was an experiment based on the classic FizzBuzz programming question given in interviews, due to it's simple premise
-                but precise question of having something happen when A, something different when B happens and something completely different when A <b>AND</b> B happen; it's
-                also a good question to test someone's ability to think ahead because the simplest solution at first mind hinder the solution when the problem becomes more complex.
-                If you don't know, FizzBuzz is a game where players one at a time increment by one every turn; if it's divisible by 3, they say Fizz and when it's divisible
-                by 5, they say Buzz and if it's divisible by both, they say FizzBuzz!
-                <br> <br>
-
-                The initial simplicity of FizzBuzz comes from the fact that the third option of A and B is the same conclusion as if A and B both happened.
-                But say it wasn't, say if it was divisible by both 3 and 5; it was something else said instead like "BazzBuzz". Then the solution of just 
-                adding the results of A and B wouldn't be possible. And that's what spurred my interest into making a more <b> Flexible FizzBuzz</b>. 
-                <br> <br>
-
-                <br> <br>
-                This is done by a vector/list of Pairs of functions and list of strings.<br>
-                - The functions take in an int and return a string. So say, Fizz will be a function that takes in a number <b> 'n' </b> and check if it's
-                 a multiple of 3 and return Fizz if it is and return an empty string if not.<br>
-
-                - The vector/list of strings are from other functions that can be overriden with the new string from this pair's function.
-                  so say we had a function that returned FizzBazz on multiples of 3 and 5; we'd need to override Fizz and Buzz, so we put those
-                  words into the vector.
-
-            </p>
+           <h2> Hobbies & Interests </h2>
+           <ul>
+            <li>Video Games </li>
+            <li>Writing stories </li>
+            <li>Reading fantasy and horror stories. </li>
+            <li>Stylized Drawing/Art. </li>
+            <li>Photo and Video Editing</li>
+            <li>Programming and Designing video games.</li>
+            <li>3D modeling and animation.</li>
+           </ul>
         </div>
 
         <!-- Add more projects as needed -->

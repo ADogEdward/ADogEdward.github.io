@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Jersey+25&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+
+        main {
+            margin-left: 5rem;
+            padding: 1rem;
+        }
+
+        .navbar {
+            width: 4rem;
+            height: 100vh;
+            position:fixed;
+            background-color: #1f455f;
+            transition: 0.3s ease;
+
+        }
+
+        .navbar:hover{
+            width:16rem;
+        }
+
+
+        .link-text {
+            display: none;
+        }
+
+        .navbar:hover .link-text{
+            display:inline;
+        }
+
+        .navbar-list
+        {
+            list-style: none;
+            
+            padding:0;
+            margin:0;
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            
+            height: 100%;
+            
+        }
+
+
+
+        .navbar-item{
+            height: 5rem;
+            width: 100%;
+            text-align: center;
+            padding-top: 20%;
+            text-decoration: none;
+            filter: grayscale(100%) opacity(0.5);
+            transition: 300ms ease;
+            background-color: #1f455f;
+
+            color:#c4feff;
+        }
+        
+        .navbar-item:hover{
+            filter: grayscale(0%) opacity(1.0);
+            background-color:#39788a;
+            color:#64c4e7;
+        }
+            
+        
+        .navbar-item:last-child{
+            margin-top:auto;
+        }
+
+        .navbar-item i {
+           font-size: 1.5em;
+        }
+
+      
+
+        .jersey-25-regular {
+            font-family: "Jersey 25", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+
+
+        .bitter-100 {
+            font-family: "Bitter", serif;
+            font-optical-sizing: auto;
+            font-weight: 300;
+            font-style: normal;
+        }
+
+
+        body {
+            background-color: #111;
+            color: #fff;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin: 0;
+
+        }
+
+        h2 {
+            text-decoration: underline;
+            font-size: 1.5em;
+        }
+
+        p {
+            font-size: 1.2em;
+            margin: 10px 0;
+
+        }
+
+        body::-webkit-scrollbar {
+            width: 0.25rem;
+
+        }
+
+        body::-webkit-scrollbar-track {
+            background: #e1dddd;
+        }
+
+        body::-webkit-scrollbar-thumb {
+
+            background: #c77edb;
+        }
+
+
+
+        .a-unity {
+
+            transition: 0.3s;
+            transition-timing-function: ease-in;
+        }
+
+        .a-unity:hover {
+            color: #c4feff;
+        }
+
+        a:link {
+  color: rgb(110, 213, 250);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+        a:visited {
+            color: #ffcffa;
+            background-color: transparent;
+            text-decoration: none;
+            transition: 1.3s;
+
+        }
+
+        section {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .project {
+            margin-left: 100px;
+            margin-right: 100px;
+            margin-bottom: 40px;
+        }
+
+        footer {
+            background-color: #000;
+            color: #666;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+    
+
+    </style>
+
+
+    <title>Aidan Edward -  Projects</title>
+
+</head>
+
+<body>
+    <nav class = "navbar">
+        <ul class = "navbar-list">
+            <li class = "navbar-item">
+                <a href="projects.html"> <i class="fa-solid fa-file-code"></i><span class = "link-text" > Projects </span></a>
+            </li>
+
+            <li class = "navbar-item">
+                <a href="coding-skill.html"> <i class="fa-solid fa-code"></i><span class = "link-text"> Coding Skill</span></a>
+            </li>
+
+            <li class = "navbar-item">
+                <a href="index.html"> <i class="fa-solid fa-address-book"></i><span class = "link-text"> Contact Details</span></a>
+            </li>
+
+            
+        </ul>
+
+
+
+
+    </nav>
+
+    <header>
+        <h1 class="jersey-25-regular">Aidan Eitaire Alexander Edward</h1>
+        <p>Game Developer/Programmer & Designer</p>
+    </header>
+    <section id="projects">
+        <div class="project">
+            <h2 class>Code-Based User Interface Tweening <a class="a-unity" target="_blank" href="https://unity.com/"><i
+                        class="fa-brands fa-unity"   rel="noopener noreferrer"></i></a></h2>
+                        <img style="height: 50vh;" src = "images/Stealth Slaughter.gif"> 
+
+            <p class="bitter-100">This was created to explore the possibility of moving user interface animations out of
+                the animation tab and into code instead; with the claim that using the Animator for User
+                Interface's are costly in terms of performance due to the fact that they apparently update
+                <b>every frame.</b> Currently only tweens between positions but this could easily be
+                extrapolated to work with any kind of values.
+                <br> <br>
+
+                This was done using what's called <a class target="_blank"
+                    href="https://www.uml.edu/docs/Second-Theory_tcm18-190098.pdf"  ><b>Second Order Systems</b></a>.
+                I found it when someone used it to control the damping, response and frequency to Procedural Animations.
+                But I adapted the method into being used for User Interface animations, I also added extra components
+                into the script
+                which allowed for animations to be triggered from buttons, for animations to trigger other animations
+                upon finishing.
+
+                This meant that animations could be tied together, one could finish and then cause another animation to
+                play.
+            </p>
+        </div>
+
+        <div class="project">
+            <h2>3D Platforming Project <a class="a-unity" target="_blank" rel="noopener noreferrer" href="https://unity.com/"><i
+                        class="fa-brands fa-unity"  ></i></a></h2>
+            <p class="bitter-100">This was created to experiment and try to emulate the mechanics and small
+                concepts of a 3D Platformer that usually go underlooked when playing such as how a character
+                might stick to the ground when running up and around slopes, player input relative to the camera,
+                dynamic jump height
+                based on how long the button is held down. My aim was to create an incredibly flexible and tight 3D
+                Platformer script.
+
+
+            </p>
+        </div>
+
+        <div class="project">
+            <h2>Flexible Fizzbuzz  <b>(C++)</b></h2>
+
+            <img src = "images/FizzBuzz.png"> 
+
+            <p class="bitter-100"> This was an experiment based on the classic FizzBuzz programming question given in interviews, due to it's simple premise
+                but precise question of having something happen when A, something different when B happens and something completely different when A <b>AND</b> B happen; it's
+                also a good question to test someone's ability to think ahead because the simplest solution at first mind hinder the solution when the problem becomes more complex.
+                If you don't know, FizzBuzz is a game where players one at a time increment by one every turn; if it's divisible by 3, they say Fizz and when it's divisible
+                by 5, they say Buzz and if it's divisible by both, they say FizzBuzz!
+                <br> <br>
+
+                The initial simplicity of FizzBuzz comes from the fact that the third option of A and B is the same conclusion as if A and B both happened.
+                But say it wasn't, say if it was divisible by both 3 and 5; it was something else said instead like "BazzBuzz". Then the solution of just 
+                adding the results of A and B wouldn't be possible. And that's what spurred my interest into making a more <b> Flexible FizzBuzz</b>. 
+                <br> <br>
+
+                <br> <br>
+                This is done by a vector/list of Pairs of functions and list of strings.<br>
+                - The functions take in an int and return a string. So say, Fizz will be a function that takes in a number <b> 'n' </b> and check if it's
+                 a multiple of 3 and return Fizz if it is and return an empty string if not.<br>
+
+                - The vector/list of strings are from other functions that can be overriden with the new string from this pair's function.
+                  so say we had a function that returned FizzBazz on multiples of 3 and 5; we'd need to override Fizz and Buzz, so we put those
+                  words into the vector.
+
+            </p>
+        </div>
+
+
+        <div class="project">
+            <h2>"Insert Game Name Here" <img style ="height: 5vh;" src = "https://godotengine.org/assets/press/icon_monochrome_dark.svg"/> </h2>
+            <img style="height: 25vh;" src = "images/CGRA252-1.png"> 
+            <img style="height: 25vh;" src = "images/CGRA252-2.png"> 
+
+            <p class="bitter-100"> 
+                For a "Game Engine Programming" course, we were given an assignment to create a small game within either Godot or Unreal Engine.
+                Because of my prior experience using Unreal Engine and my inexperience using Godot, I picked the latter and decided to make a simple
+                2D platformer with collectables and enemies. It helped me understand my way around using Godot's signal system when calling functions,
+                as well as the node based system that the engine is based around. 
+
+                At the end of the assignment, we had to send in a video explaining all our code in a manner that showed our understanding of the 
+                languange and the game engine.
+            </p>
+        </div>
+
+
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Aidan Edward | Designed with ❤️</p>
+    </footer>
+
+</body>
+
+</html>
