@@ -1,299 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Jersey+25&display=swap"
-        rel="stylesheet">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <style>
-
-        main {
-            margin-left: 5rem;
-            padding: 1rem;
-        }
-
-        .navbar {
-            width: 4rem;
-            height: 100vh;
-            position:fixed;
-            background-color: #1f455f;
-            transition: 0.3s ease;
-
-        }
-
-        .navbar:hover{
-            width:16rem;
-        }
-
-
-        .link-text {
-            display: none;
-        }
-
-        .navbar:hover .link-text{
-            display:inline;
-        }
-
-        .navbar-list
-        {
-            list-style: none;
-            
-            padding:0;
-            margin:0;
-            display:flex;
-            flex-direction: column;
-            align-items: center;
-            
-            height: 100%;
-            
-        }
-
-
-
-        .navbar-item{
-            height: 5rem;
-            width: 100%;
-            text-align: center;
-            padding-top: 20%;
-            text-decoration: none;
-            filter: grayscale(100%) opacity(0.5);
-            transition: 300ms ease;
-            background-color: #1f455f;
-
-            color:#c4feff;
-        }
-        
-        .navbar-item:hover{
-            filter: grayscale(0%) opacity(1.0);
-            background-color:#39788a;
-            color:#64c4e7;
-        }
-            
-        
-        .navbar-item:last-child{
-            margin-top:auto;
-        }
-
-        .navbar-item i {
-           font-size: 1.5em;
-        }
-
-      
-
-        .jersey-25-regular {
-            font-family: "Jersey 25", sans-serif;
-            font-weight: 400;
-            font-style: normal;
-        }
-
-
-
-        .bitter-100 {
-            font-family: "Bitter", serif;
-            font-optical-sizing: auto;
-            font-weight: 300;
-            font-style: normal;
-        }
-
-
-        body {
-            background-color: #111;
-            color: #fff;
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        header {
-            text-align: center;
-            padding: 50px 0;
-        }
-
-        h1 {
-            font-size: 2.5em;
-            margin: 0;
-
-        }
-
-        h2 {
-            text-decoration: underline;
-            font-size: 1.5em;
-        }
-
-        p {
-            font-size: 1.2em;
-            margin: 10px 0;
-
-        }
-
-        body::-webkit-scrollbar {
-            width: 0.25rem;
-
-        }
-
-        body::-webkit-scrollbar-track {
-            background: #e1dddd;
-        }
-
-        body::-webkit-scrollbar-thumb {
-
-            background: #c77edb;
-        }
-
-
-
-        .a-unity {
-
-            transition: 0.3s;
-            transition-timing-function: ease-in;
-        }
-
-        .a-unity:hover {
-            color: #c4feff;
-        }
-
-        a:link {
-  color: rgb(110, 213, 250);
-  background-color: transparent;
-  text-decoration: none;
-}
-
-        a:visited {
-            color: #ffcffa;
-            background-color: transparent;
-            text-decoration: none;
-            transition: 1.3s;
-
-        }
-
-        section {
-            text-align: center;
-            padding: 50px 20px;
-        }
-
-        .project {
-            margin-left: 100px;
-            margin-right: 100px;
-            margin-bottom: 40px;
-            text-align: left;
-        }
-
-        footer {
-            background-color: #000;
-            color: #666;
-            text-align: center;
-            padding: 20px 0;
-        }
-
-    
-
-    </style>
-
-
-    <title>Aidan Edward -  Portfolio</title>
-
+    <title>Aidan Edward - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <nav class = "navbar">
-        <ul class = "navbar-list">
-            <li class = "navbar-item">
-                <a href="projects.html"> <i class="fa-solid fa-file-code"></i><span class = "link-text" > Projects </span></a>
-            </li>
-
-            <li class = "navbar-item">
-                <a href="coding-skill.html"> <i class="fa-solid fa-code"></i><span class = "link-text"> Coding Skill</span></a>
-            </li>
-
-            <li class = "navbar-item">
-                <a href="index.html"> <i class="fa-solid fa-address-book"></i><span class = "link-text"> Contact Details</span></a>
-            </li>
-
-            
-        </ul>
-
-
-
-
-    </nav>
-
-    <header>
-        <h1 class="jersey-25-regular">Aidan Eitaire Alexander Edward</h1>
-        <p>Game Developer/Programmer & Designer</p>
+    <header class="header">
+        <h1>Aidan Edward - Portfolio</h1>
+        <p>Welcome to my professional portfolio. Here are some of my projects.</p>
     </header>
-    <section id="projects">
-        <div class="project">
-           <h2> Personal Background</h2>
-           <p>
-            Just recently graduated last year with a Bachelor's Degree, majoring in Computer Science and minoring in Computer Graphics at Victoria University. 
-            Grew up in the small town of Petone in a small family with just one sporty brother while I attached myself to the computer at an early age, 
-            and from then on became obsessed with all things computer-related which eventually led to my desire to make the video games I enjoyed which led me 
-            to studying programming and design as my interest in the decisions and philosophy of creators led to better experiences.  I’m usually quiet but can 
-            open up easily in front of others, attentive and honest with a weird sense of humor.
 
-           </p>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" style = "z-index: -1; margin-top:-9vh;  position: relative;  ">
+      <path fill="#ffffff" fill-opacity="1" d="M0,160L18.5,165.3C36.9,171,74,181,111,181.3C147.7,181,185,171,222,149.3C258.5,128,295,96,332,101.3C369.2,107,406,149,443,186.7C480,224,517,256,554,250.7C590.8,245,628,203,665,202.7C701.5,203,738,245,775,240C812.3,235,849,181,886,149.3C923.1,117,960,107,997,117.3C1033.8,128,1071,160,1108,154.7C1144.6,149,1182,107,1218,101.3C1255.4,96,1292,128,1329,128C1366.2,128,1403,96,1422,80L1440,64L1440,0L1421.5,0C1403.1,0,1366,0,1329,0C1292.3,0,1255,0,1218,0C1181.5,0,1145,0,1108,0C1070.8,0,1034,0,997,0C960,0,923,0,886,0C849.2,0,812,0,775,0C738.5,0,702,0,665,0C627.7,0,591,0,554,0C516.9,0,480,0,443,0C406.2,0,369,0,332,0C295.4,0,258,0,222,0C184.6,0,148,0,111,0C73.8,0,37,0,18,0L0,0Z"></path>
+    </svg>
 
-           <h2> Education </h2>
-           <p>
-             <b>Victoria University of Wellington</b> <br>
-             Bachelor of Science <br>
-             Major in Computer Science, Minor in Computer Graphics <br>
-             <b>Courses Include:</b> 
-             <ul>
-                <li>Real-time 3D Computer Graphics </li>
-                <li>Fund. of Artificial Intelligence </li>
-                <li>Game Design I </li>
-                <li>Game Design II </li>
-                <li>Computer Graphics </li>
-                <li>ML Tools and Techniques </li>
-                <li>Algorithms and Data Structures </li>
-               </ul>
-
-             <br>
-             <b>Hutt Valley High School</b> <br>
-             <ul>
-              <li>  <a> <b> NCEA LEVEL III</b>: English </a></li>
-              <li>  <a> <b> NCEA LEVEL III</b>: Calculus </a></li>
-              <li>  <a> <b> NCEA LEVEL III</b>: Physics </a></li>
-              <li>  <a> <b> NCEA LEVEL III</b>: Computer Science </a></li>
-              <li>  <a> <b> NCEA LEVEL III</b>: Digital Technology </a></li>
-
-
-             </ul>
-
-           </p>
-
-
-           <h2> Hobbies & Interests </h2>
-           <ul>
-            <li>Video Games </li>
-            <li>Writing stories </li>
-            <li>Reading fantasy and horror stories. </li>
-            <li>Stylized Drawing/Art. </li>
-            <li>Photo and Video Editing</li>
-            <li>Programming and Designing video games.</li>
-            <li>3D modeling and animation.</li>
-           </ul>
-        </div>
-
-        <!-- Add more projects as needed -->
-
+    <section id="about" class="slide-in-left">
+        <h2>About Me</h2>
+        <p style="color:#f0f2f5;">I am a passionate web developer with skills in front-end and back-end technologies.
+             I enjoy creating interactive and visually appealing web experiences.</p>
     </section>
 
-    <footer>
-        <p>&copy; 2024 Aidan Edward | Designed with ❤️</p>
-    </footer>
+    <section id="education" class="slide-in-right">
+        <h2>Education</h2>
+        <div class="project-container">
+            <div class="project-card">
+                <h3>Victoria University Of Wellington  <img src = "VictoriaUniversityLogo.jpg" style = "height:2rem;"></h3>
+                <p><b> Bachelor Of Science - Major in Computer Science, Minor in Computer Graphics </b></p>
+                <br>
+                <h4> Notables Courses:</h4>
+                <ul style = "padding-left: 2rem;">
+                    <li> MDDN321 - Game Design II (<b>B-</b>)</li>
+                    <li> CGRA350 - Real-time 3D Computer Graphics (<b>A-</b>)</li>
+                    <li> CGRA252 - Game Engine Programming (<b>B+</b>)</li>
+                    <li> ANFX201 - Animation & Visual Effects II (<b>B</b>)</li>
+                    <li> SWEN221 - Software Development (<b>B+</b>)</li>
+                </ul>
+            </div>
+            <div class="project-card">
+                <h3>Hutt Valley High School <img src = "HVH_LOGO.png" style="height:2rem;"> </h3>
+                <br>
+                <h4> Subjects:</h4>
+                <ul style = "padding-left: 2rem;">
+                    <li> English (<b>NCEA Level III</b>)</li>
+                    <li> Mathematics (<b>NCEA Level III</b>)</li>
+                    <li> Physics (<b>NCEA Level III</b>)</li>
+                    <li> Computer Science (<b>NCEA Level III</b>)</li>
+                    <li> Digital Technology (<b>NCEA Level III</b>)</li>
+                </ul>
+            </div>
+           
+        </div>
+    </section>
 
+
+    <section id="projects" class="slide-in-left">
+        <h2>Projects</h2>
+        <div class="project-container">
+            <div class="project-card">
+                <h3>Knightpoint <a href="https://www.unrealengine.com/en-US"> <img style="height: 4vh; " title="Unreal Engine 4" alt="Unreal Engine 4" src="images/unreal-1.svg"></a></h3>
+                <a href = "https://docs.google.com/document/d/1NoyzS3HjR_NjL7VS-AUiJqWyrkzP4jQd-SI8Kd8FUSc/edit?usp=sharing"> Game Design Document</a>
+                <div class="circular--landscape"><img src="images/image1.gif"></div>
+                <p>
+                    As part of the Game Design I(MDDN221) course, we were required to create a 2D game. I(along with several other team members) created a 
+                    2D Platformer called Knightpoint. I focused on Level Design and Programming in Blueprints while the rest did the art assets. We were
+                    able to create 3 levels; while unable to incorporate everything in the Game Design Document, we trimmed unnecessary or secondary additions
+                    to keep the basic structure of the game within the deadline we were given.
+                </p>    
+            </div>
+
+            <div class="project-card" >
+                <h3>UI Programming Tweening <a href="https://unity.com/"><img style="height: 4vh;" title="Unity" alt="Unity" src="images/unity-game-engine-icon.webp"></a></h3>
+                <div class="circular--landscape"><img src="images/Stealth Slaughter.gif" alt="Stealth Slaughter Animation" style="margin-left:0vh; margin-top: -13vh; width: 22vh; height: auto;"> </div>
+                    <p>
+                        This was created to explore the possibility of moving user interface animations out of the animation tab and into code instead;
+                        with the claim that using the Animator for User Interfaces is costly in terms of performance due to the fact that they apparently
+                        update every frame. Currently only tweens between positions, but this could easily be extrapolated to work with any kind of values.
+                        <br><br>
+                        This was done using what's called <a href = "https://www.uml.edu/docs/Second-Theory_tcm18-190098.pdf">Second Order Systems</a>. I found it when 
+                        someone used it to control the damping, response, and frequency
+                        for <a href = "https://www.youtube.com/watch?v=KPoeNZZ6H4s&t=14s&pp=ygUacHJvY2VkdXJhbCBhbmltYXRpb24gdW5pdHk%3D">Procedural Animations</a>. 
+                        I adapted the method for User Interface animations and added extra components into the script, allowing 
+                        animations to be triggered by buttons or to trigger other animations upon completion. This meant that animations could be tied together, 
+                        where one finishes and then causes another to play.
+                    </p>
+                
+            </div>
+            <div class="project-card">
+                <h3 style = "font-family: Comic Sans MS;">Insert Game Name Here <img style="height: 4vh; filter:invert(1.0);" title="Godot" alt="Godot" src="images/icon_monochrome_dark.svg"></h3>
+                <div class="circular--landscape"> <img src="images/CGRA252-1.png" > </div>
+                <div class="circular--landscape"><img src="images/CGRA252-2.png" > </div>
+                <p>This game was made for a Game Engine Programming class in which the task was to come to grips and 
+                    make a game within a engine and showcase and talk about the code to show our understanding and profficiency
+                    with said engine. I chose Godot for my engine and a platformer for my game, with only the most creative
+                    title.
+                </p>
+
+
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="slide-in-right">
+        <h2>Skill Efficency</h2>
+        <div class="project-container" >
+            
+            <div class="project" style="width: 100%;">
+                <div class="project-card">
+
+                <p>Unity  <img style="height: 4vh;" title="Unity" alt="Unity" src="images/unity-game-engine-icon.webp"></p>
+                <div class="container delay-1" >
+                    <div class="skills unity">75%</div>
+                </div>
+                <br>
+
+                <p>Java <img style="height: 4vh;" title="Java" alt="Java" src="images/java.svg"></p>
+                <div class="container delay-1">
+                    <div class="skills java">75%</div>
+                </div>
+                <br>
+
+                <p>C++ <img style="height: 4vh;" title="Python" alt="Python" src="images/ISO_C++_Logo.svg.png"></p>
+                <div class="container delay-2">
+                    <div class="skills cplus">60%</div>
+                </div>
+
+                <br>
+
+                <p>Python <img style="height: 4vh;" title="Python" alt="Python" src="images/Python-logo-notext.svg.png"></p>
+                <div class="container delay-2">
+                    <div class="skills python">50%</div>
+                </div>
+               
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="slide-in-left" style="color:#f0f2f5;">
+        <h2>Contact Me</h2>
+        <p>Interested in working together? Feel free to reach out!</p>
+        <ul style = "padding-left: 2rem;">
+            <li> Email: AEitiareEdward@outlook.com</li>
+            <li> Phone: (64+) 027 398 9131</li>
+        </ul>
+    </section>
 </body>
-
 </html>

@@ -1,0 +1,222 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #DC032F;
+    color: #4b4b4b;
+    line-height: 1.6;
+}
+
+h1 {
+    color:#141414;
+}
+
+/* Header */
+.header {
+    text-align: center;
+    padding: 2em 1em;
+    background-color: white;
+    color: #141414;
+    overflow: hidden;
+    padding: 60px 20px;
+    z-index: 3;
+}
+
+.wave {
+    bottom: 0;
+    left: 0;
+    margin-top: -5vh;
+    
+    width: 100%;
+    height: auto;
+    z-index: 1;
+    
+    
+}
+
+
+/* Sections */
+section {
+    padding: 2em 1em;
+    margin: 1em auto;
+    max-width: 800px;
+    background-color: #179DAB;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateX(-50px);
+}
+
+section h2{
+    color:#f0f2f5;
+}
+
+.circular--landscape { display: inline-block; position: relative; width: 200px; height: 200px; overflow: hidden; border-radius: 50%; } 
+.circular--landscape img { width: auto; height: 100%; margin-left: -50px; }
+
+
+/* Slide-In Animations */
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Assigning Animations */
+.slide-in-left {
+    animation: slideInLeft 1s forwards;
+}
+
+.slide-in-right {
+    animation: slideInRight 1s forwards;
+}
+
+/* Projects Section */
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.project-card {
+    flex: 1;
+    min-width: 250px;
+    padding: 1em;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+/* Contact Form */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.8em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    padding: 0.8em;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+img {
+    height: 20px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+    .project-container {
+     flex-direction: column;
+        flex: 1;
+        
+    }
+}
+
+
+
+
+
+.project {
+    margin-left: 50px;
+    margin-right: 100px;
+    margin-bottom: 40px;
+}
+
+ /* Skill bars */
+ .container {
+    width: 0%;
+    height: 3vh;
+    border-radius: 10px;
+    background-color: #ddd;
+    animation: sliderfill 1s forwards;
+}
+
+.container.delay-1 { animation-delay: 0.12s; }
+.container.delay-2 { animation-delay: 0.42s; }
+.container.delay-3 { animation-delay: 0.62s; }
+.container.delay-4 { animation-delay: 0.82s; }
+.container.delay-5 { animation-delay: 0.92s; }
+
+.skills {
+    height: inherit;
+    background-color: #2c2c2c;
+    color: rgba(0, 0, 0, 0);
+    animation: textfadein 5.25s forwards;
+    text-indent: 2vh;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    
+}
+
+.skills.unity{animation-delay: 0.12s;}
+.skills.java{animation-delay: 0.12s;}
+.skills.cplus{animation-delay: 0.42s;}
+.skills.python{animation-delay: 0.42s;}
+.skills.js{animation-delay: 0.82s;}
+.skills.html{animation-delay: 0.92s;}
+.skills.css{animation-delay: 1.25s;}
+
+
+
+
+.unity { width: 75%; background-color: #2c2c2c; }
+.java { width: 75%; background-color: #ff7e4f; }
+.cplus { width: 60%; background-color: #e958c0; }
+.python { width: 60%; background-color: #f4ce36; }
+.ue { width: 50%; background-color: #272957; }
+
+.js { width: 50%; background-color: #f44336; }
+.html { width: 35%; background-color: #157328; }
+.css { width: 20%; background-color: #2196F3; }
+
+@keyframes sliderfill {
+    from { width: 0%; }
+    to { width: 100%; }
+}
+
+@keyframes textfadein {
+    from { color: rgba(0, 0, 0, 0); }
+    to { color: rgba(255, 255, 255); }
+}
